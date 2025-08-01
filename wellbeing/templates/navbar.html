@@ -1,0 +1,50 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: white;
+      z-index: 1000; /* stay above other elements */
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 1vw 10vw 1.2vw 10vw;
+
+      font-size: 1.2vw;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: rgb(204, 203, 203);
+    }
+
+    .body123 {
+      padding-top: 80px; /* adjust to navbar height so content isn't hidden under it */
+    }
+    .navbar a .logo {
+      height: 3vw;
+    }
+  </style>
+</head>
+<body class="body123">
+  <div class="navbar">
+    <a href="{{ url_for('frontpage') }}" style="padding: 0.5vw"
+      ><img class="logo" src="photo/kathmandu.png" alt=""
+    /></a>
+
+    <a href="{{ url_for('frontpage') }}">Home</a>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="{{ url_for('services') }}">Services</a>
+    <a href="{{ url_for('faq') }}">FAQ</a>
+  </div>
+</body>
