@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ne">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>स्वस्थ जीवनशैली</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Noto Sans Devanagari", sans-serif;
+        font-size: larger;
+        line-height: 1.6;
+        max-width: 55%;
+        margin: 40px auto;
+        padding: 0 15px;
+        background: #f9faff;
+        color: #222;
+      }
+      h1 {
+        text-align: center;
+        color: #b06203;
+        margin-bottom: 30px;
+      }
+      ul {
+        list-style-type: disc;
+        margin-left: 30px;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+
+      .cards {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .card {
+        display: inline-block;
+        padding: 12px 24px;
+        background: #f7941d;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .card:hover {
+        background: #9a5502;
+      }
+    </style>
+  </head>
+  <body>
+    {% include "navbar.html" %}
+    <h1>स्वस्थ जीवनशैली</h1>
+
+    <p>
+      स्वास्थ्य प्रवर्द्धनमा स्वस्थ जीवनशैलीले सहयोग गर्दछ। यसले शारीरिक तथा
+      मानसिक स्वास्थ्यलाई राम्रो राख्न मद्दत पुर्‍याउँछ। स्वस्थ जीवनशैली
+      अन्तर्गत मुख्यतया निम्न कुराहरू पर्दछन्:
+    </p>
+
+    <img
+      src="photo/well3.png"
+      alt="स्वस्थ जीवनशैली"
+      style="width: 100%; height: auto; border-radius: 8px"
+    />
+    <ul>
+      <li>स्वस्थ / सन्तुलित आहार सेवन गर्ने,</li>
+      <li>हानिकारक पदार्थको प्रयोग नगर्ने,</li>
+      <li>उचित व्यायाम (जस्तै हिडडुल, योग, आदि) गर्ने,</li>
+      <li>उचित काम गरेर व्यस्त रहने,</li>
+      <li>आवश्यक मात्रामा आराम तथा निद्रा लिने,</li>
+      <li>आफ्नो शरीर र मनको अवस्थालाई ख्याल गर्ने,</li>
+      <li>आवश्यकता अनुसार सहायता लिने वा दिने,</li>
+      <li>
+        सम्बन्धित निकाय, आधिकारिक व्यक्ति, वा विज्ञबाट प्राप्त जानकारीमा मात्र
+        भरोसा गर्ने,
+      </li>
+      <li>अनधिकृत वा हल्लाका कुरामा विश्वास नगर्ने,</li>
+      <li>
+        असहज महसुस भएमा उचित प्राथमिक उपचार लिने, र समयमै स्वास्थ्य सेवा लिने।
+      </li>
+    </ul>
+    <div
+      class="section positive-negative-myths"
+      style="padding: 15px; background-color: white; border-radius: 8px"
+    >
+      <h3>Related articles</h3>
+
+      <div style="display: flex; gap: 20px; justify-content: space-between">
+        <!-- Card 1 -->
+        {% include "intro4.html" %}{% include "intro1.html" %} {% include
+        "intro2.html" %}
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ne">
+  <head>
+    <meta charset="UTF-8" />
+    <title>बारम्बार सोधिने प्रश्नहरु (FAQ)</title>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Noto Sans Devanagari", sans-serif;
+         font-size: 3vh;
+       background: linear-gradient(135deg, #d9f1ff, #f5fafc);
+        margin: 0;
+        padding: 40px 20px;
+        color: #1a2935;
+        line-height: 1.7;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        user-select: none;
+      }
+
+      h1 {
+        font-family: "Kantipur", "Arial Unicode MS", Arial, sans-serif;
+        text-align: center;
+        color: #0b3d91;
+        font-weight: 700;
+        font-size: 2.8rem;
+        margin-bottom: 50px;
+        text-shadow: 1px 1px 3px #c2d8f2;
+        user-select: text;
+      }
+
+      details {
+        background: #ffffffcc;
+        border-radius: 15px;
+        padding:20px 10px 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 8px 20px rgba(11, 61, 145, 0.15);
+        position: relative;
+        cursor: pointer;
+        transition: background-color 0.4s ease, box-shadow 0.4s ease;
+      }
+      details[open] {
+        background: #e6f1ff;
+        box-shadow: 0 12px 30px rgba(11, 61, 145, 0.3);
+      }
+
+      summary {
+        font-size: 3.5vh;
+        font-weight: 700;
+        outline: none;
+        list-style: none;
+        position: relative;
+        padding-left: 35px;
+        user-select: text;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+
+      summary::before {
+        content: "➤";
+        color: #0b3d91;
+        display: inline-block;
+        margin-right: 20px;
+        transition: transform 0.3s ease;
+      }
+      details[open] summary::before {
+        transform: rotate(90deg);
+      }
+
+      p {
+        margin: 10px;
+        color: #2d3e50;
+        user-select: text;
+      }
+      ul {
+        color: #2d3e50;
+        user-select: text;
+      }
+
+      /* Hover effect for summary */
+      details:hover summary {
+        color: #ff6b6b;
+        transition: color 0.3s ease;
+      }
+
+      /* Scrollbar styling (optional) */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #f1f5f9;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #0b3d91cc;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #0b3d91;
+      }
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 1.2rem;
+        color: #777;
+      }
+       .cards {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .card {
+        display: inline-block;
+        padding: 12px 24px;
+        background: #007b8f;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .card:hover {
+        background: #007b8f;
+      }
+
+      @media (max-width: 480px) {
+        body {
+          padding: 30px 15px;
+        }
+        details {
+          padding: 20px 25px 20px 30px;
+        }
+        summary {
+          font-size: 1.1rem;
+          padding-left: 30px;
+        }
+        summary::before {
+          left: 5px;
+          font-size: 1.3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    {% include "navbar.html" %}
+    <h1>बारम्बार सोधिने प्रश्नहरु (FAQ)</h1>
+
+    <details>
+      <summary>१. मानसिक स्वास्थ्य भनेको के हो?</summary>
+      <p>
+       मानसिक स्वास्थ्य भन्नाले मनमा हुने सकारात्मक अवस्था बुझ्न सकिन्छ । व्यक्तिको सोच, भावना, व्यवहार र सम्बन्धमा सन्तुलन कायम रहनुले मानसिक स्वास्थ्यको संकेत गर्दछ । मनको स्वास्थ्यले हाम्रो निर्णय गर्ने तरिकामा असर पार्छ । मानसिकरूपले स्वस्थ रहदा सृजनशील रहन र सन्तुलित व्यवहार गर्न सहज हुन्छ ।
+
+      </p>
+    </details>
+
+    <details>
+      <summary>२. मानसिक स्वास्थ्य समस्या भनेको के हो?</summary>
+      <p>
+       धेरै दिन देखि मनमा असहजता हुनुले मानसिक स्वास्थ्य समस्या दर्साउदछ । यस्तो बेलामा व्यक्तिको विचार, भावना, वा व्यवहार असामान्य रहन्छ । मानसिक स्वास्थ्य समस्याले दैनिक जीवनलाई सहजरूपमा सञ्चालन गर्न कठिन बनाउदछ । तनाव, बेचैनी / डर चिन्ता (एङ्जाइटी), उदासीनता (डिप्रेसन), अनिद्रा, हानीकारक पदार्थको प्रयोग, आदिले मानसिक स्वास्थ्य असहजता वा मानसिक स्वास्थ्य समस्या दर्साउदछन ।
+      </p>
+    </details>
+
+    <details>
+      <summary>
+        ३. म कसरी थाहा पाउन सक्छु कि मलाई मानसिक स्वास्थ्य समस्या छ?
+      </summary>
+      <p>
+        कसैलाई दुई हप्ता वा बढी समयसम्म दुःख, निराशा, डर, चिन्ता, अनिद्रा, थकान, वा काममा ध्यान दिन कठिन भइरहेको छ भने स्वास्थ्यकर्मीलाई भेटेर मानसिक स्वास्थ्य परीक्षण गर्नु पर्दछ । आफैले पनि मानसिक स्वास्थ्यको प्रारम्भिक परीक्षण गर्न सकिन्छ । यस वेबसाइटमा रहेका WHO-5, GAD-7, वा PHQ-9 जस्ता स्व-मूल्याङ्कन सामग्रीले यस कार्यमा सहयोग गर्दछन ।
+      </p>
+    </details>
+
+    <details>
+      <summary>४. मानसिक स्वास्थ्य सेवा लिन कहाँ जान सकिन्छ?</summary>
+      <p>
+        
+        काठमाडौं महानगरपालिका अन्तर्गतका ३२ वटै वडामा रहेका स्वास्थ्य केन्द्रहरूमा आधारभूत मानसिक स्वास्थ्य सेवा उपलब्ध छ । त्यस्तै काठमाडौं ११ बबरमहल स्थित शहरी स्वास्थ्य प्रवर्द्धन केन्द्रमा आइतवार र बुधवार विशेषज्ञ मानसिक स्वास्थ्य सेवा उपलब्ध छ । 
+केन्द्रीय स्तरका  त्रिवि शिक्षण अस्पताल, मानसिक अस्पताल लगनखेल, कान्ति बाल अस्पतालमा समेत विशेषज्ञ स्तरको मानसिक स्वास्थ्य सेवा लिन सकिन्छ । 
+
+      </p>
+    </details>
+
+    <details>
+      <summary>५. सेवा लिनलाई पैसा लाग्छ?</summary>
+      <p>
+        महानगरपालिका अन्तर्गत उपलब्ध आधारभूत स्वास्थ्य सेवा (विशेषज्ञ मानसिक स्वास्थ्य सेवा समेत) निःशुल्क रहेको छ । 
+      </p>
+    </details>
+
+    <details>
+      <summary>
+        ६. मेरो साथी वा परिवारको सदस्यलाई मनोसामाजिक समस्या छ। म के गर्न सक्छु?
+      </summary>
+     <h3>निम्न कुराले उसलाई थप सहयोग पुग्न सक्छः</h3>
+<ul>
+  <li>उसलाई खुलेर कुरा गर्न सहयोग गर्नुहोस्</li>
+  <li>सहानुभूति देखाउनुहोस्, दोष नदिनुहोस्</li>
+  <li>स्वास्थ्य सेवा लिन प्रोत्साहित गर्नुहोस् र साथ दिनुहोस्</li>
+  <li>गम्भीर अवस्था देखिएमा तुरुन्तै स्वास्थ्य संस्थामा लग्नुहोस्</li>
+</ul>
+
+   
+      </p>
+    </details>
+
+    <details>
+      <summary>
+        ७. अनलाइन परीक्षणहरू (WHO-5, GAD-7, PHQ-9) को नतिजा भरपर्दो हुन्छ?
+      </summary>
+      <p>
+        यी परीक्षणहरू  सामाग्रीहरू आत्म-मूल्याङ्कन (self-screening) को लागि मात्र हुन् । यिनलाई विज्ञहरूले तयार पारेका हुन्छ र धेरै देशमा प्रयोग गरिन्छ । यिनलाई नेपाली भाषामा समेत अनुवाद गरिएको छ जसलाई विज्ञहरूले प्रारम्भीक परीक्षण गर्ने साधनका रूपमा मान्यता दिएका छन । यी सामग्रीका नतिजाकै आधारमा रोगको पहिचान (diagnosis) भएको मानिदैन । नतिजाले समस्या उच्च देखाएमा स्वास्थ्यकर्मी वा मानसिक स्वास्थ्य विशेषज्ञसँग सल्लाह लिनु पर्दछ ।
+      </p>
+    </details>
+
+    <details>
+      <summary>८. मेरो व्यक्तिगत जानकारी सुरक्षित रहन्छ?</summary>
+      <p>
+        स्वास्थ्य सेवामा तपाईंको व्यक्तिगत गोप्यता कायम रहोस् भनेर ख्याल गरिन्छ । थप गोप्यताको लागि अनलाइन परीक्षणहरूमा यथार्थ नाम र फोन नम्बर नबुझाएर वा परिवर्तन गरेर प्रयोग गर्न सकिन्छ ।
+      </p>
+    </details>
+
+    <details>
+      <summary>
+        ९. मनोसामाजिक सहायता वा मानसिक स्वास्थ्य परामर्शका लागि कसरी सम्पर्क
+        गर्ने?
+      </summary>
+      <h3>आवश्यक जानकारी वा मनोसामाजिक सहायताका लागि सान्दर्भिक केही नम्बरहरूः</h3>
+<ul>
+  <li>काठमाडौँ महानगरपालिका
+नगर कार्यपालिकाको कार्यालय,स्वास्थ्य विभाग: ११८०</li>
+  <li>राष्ट्रिय आत्महत्या रोकथाम हेल्पलाइन: ११६६</li>
+  <li>कान्ति बाल अस्पताल मानसिक स्वास्थ्य हेल्पलाइन: १६६० ०१ १०६६६</li>
+  <li>सिविन बाल सहायता: १०९८</li>
+  <li>नेपाल प्रहरी (आपतकालीन): १००</li>
+</ul>
+<p>
+  तपाईको नजिकका स्वास्थ्य संस्थाले समेत आवश्यक जानकारी दिने, मनोसामाजिक परामर्श सेवा प्रदान गर्ने, वा मनोसामाजिक सहायताको लागि सहजीकरण गरिरहेका हुनसक्छन्।
+</p>
+
+    </details>
+   <footer>धन्यवाद !
+   
+    <div class="footer">© २०२५ काठमाडौं महानगरपालिका - स्वास्थ्य विभाग</div>
+ 
+   </footer>
+   <br> 
+    
+  </body>
+</html>

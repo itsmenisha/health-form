@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ne">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>मानसिक स्वास्थ्य समस्याका कारण र सामना सिप</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        font-family: "Noto Sans Devanagari", sans-serif;
+        font-size: larger;
+        line-height: 1.6;
+        max-width: 55%;
+        margin: 40px auto;
+        padding: 0 15px;
+        background: #f7f7fc;
+        color: #222;
+      }
+      h1 {
+        text-align: center;
+        color: #025764;
+        margin-bottom: 30px;
+      }
+      h2 {
+        color: #007b8f;
+        margin-top: 30px;
+        margin-bottom: 15px;
+      }
+      ul {
+        list-style-type: disc;
+        margin-left: 30px;
+      }
+      p {
+        margin-bottom: 15px;
+      }
+
+      .cards {
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .card {
+        display: inline-block;
+        padding: 12px 24px;
+        background: #007b8f;
+        color: white;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .card:hover {
+        background: #004c58;
+      }
+    </style>
+  </head>
+  <body>
+    {% include "navbar.html" %}
+
+    <h1>मानसिक स्वास्थ्य समस्याका कारण र सामना सिप</h1>
+
+    <h2>मानसिक स्वास्थ्य समस्याका कारणः</h2>
+    <p>मानसिक स्वास्थ्य समस्याका कारणहरू निम्न मध्ये कुनै हुन सक्छन्:</p>
+    <ul>
+      <li>
+        <strong>जैविक –</strong> मस्तिष्कमा हुने चोटपटक वा संक्रमण, हानिकारक
+        पदार्थको असर, अन्य स्वास्थ्य समस्याको असर, असामान्य वृद्धि विकास,
+        वंशानुगत, आदि।
+      </li>
+      <li>
+        <strong>मनोव्यावहारिक –</strong> नकारात्मक भोगाइ वा सिकाइ, पारिवारिक
+        विग्रह, सचेतनाको कमी, अनुपयुक्त सामना सिप, आवश्यक स्वास्थ्य सेवा प्रयोग
+        नगर्नु, आदि।
+      </li>
+      <li>
+        <strong>सामाजिक –</strong> तनावपूर्ण परिवेश, असन्तुलित सम्बन्ध, सामाजिक
+        बहिष्करण, कठिन सामाजिक आर्थिक परिवेश, उचित अवसरको अभाव, शिक्षाको अभाव,
+        स्वास्थ्य सेवाको अभाव, आदि।
+      </li>
+    </ul>
+
+    <h2>सकारात्मक सामना सिपः</h2>
+
+    <p>
+      असहज वा तनावपूर्ण अवस्थाको व्यवस्थापन गर्नका लागि सकारात्मक र नकारात्मक
+      उपायहरू हुन्छन्। नकारात्मक वा हानिकारक उपायको प्रयोगले शारीरिक, मानसिक,
+      सामाजिक, तथा आर्थिक तवरले क्षति पुर्‍याउँछन्| सकारात्मक उपायहरूले
+      स्वास्थ्यलाई बिगार्ने गर्दैनन्। सामान्यतया असहज हुँदा निम्न सकारात्मक उपाय
+      अपनाउन सकिन्छः
+    </p>
+    <img
+      src="photo/well2.png"
+      alt="सकारात्मक सामना सिप"
+      style="width: 100%; height: auto; border-radius: 8px"
+    />
+    <p>
+      अन्य सकारात्मक उपायहरूमा - घरपरिवारमा छलफल गर्ने, स्वस्थ जीवनशैली (स्वस्थ
+      आहार विहार) अपनाउने, सहायता प्रणालीको प्रयोग गर्ने, आवश्यकता अनुसार
+      स्वास्थ्य परीक्षण तथा परामर्श सेवा लिने, आदि पर्दछन्।
+    </p>
+
+    <div
+      class="section positive-negative-myths"
+      style="padding: 15px; background-color: white; border-radius: 8px"
+    >
+      <h3>Related articles</h3>
+
+      <div style="display: flex; gap: 20px; justify-content: space-between">
+        {% include "intro2.html" %} {% include "intro3.html" %} {% include
+        "intro4.html" %}
+      </div>
+    </div>
+  </body>
+</html>

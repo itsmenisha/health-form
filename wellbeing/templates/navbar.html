@@ -1,0 +1,69 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    .navbar {
+      margin: 0;
+      font-family: "Noto Sans Devanagari", sans-serif;
+      font-size: larger;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: white;
+      z-index: 1000; /* stay above other elements */
+      overflow: hidden;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 1vw 10vw 1.2vw 10vw;
+
+      font-size: 1.2vw;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: rgb(204, 203, 203);
+    }
+
+    .body123 {
+      padding-top: 80px; /* adjust to navbar height so content isn't hidden under it */
+    }
+    .navbar a .logo {
+      height: 3vw;
+    }
+  </style>
+</head>
+<body class="body123">
+  <div class="navbar">
+    <a href="{{ url_for('frontpage') }}" style="padding: 0.5vw"
+      ><img class="logo" src="photo/kathmandu.png" alt=""
+    /></a>
+
+    <a href="{{ url_for('frontpage') }}">Home</a>
+    <a href="{{ url_for('about') }}">About</a>
+    <a href="{{ url_for('services') }}">Services</a>
+       <!-- <a href="{{ url_for('introwho') }}">WHO-5</a>
+        <a href="{{ url_for('introgad') }}">GAD-7</a>
+        <a href="{{ url_for('introphq') }}">PHQ-9</a>
+         -->
+    <a href="{{ url_for('faq') }}">FAQ</a>
+    <!-- <p style="  padding: 1vw 10vw 1.2vw 10vw;
+">  <a href="{{ url_for('article1') }}">सकारात्मक सामना सिप</a>
+        <a href="{{ url_for('article2') }}">मनोसामाजिक सहायता प्रणाली</a>
+        <a href="{{ url_for('article3') }}">मानसिक स्वास्थ्य सम्बन्धी नकारात्मक धारणाहरू</a>
+        <a href="{{ url_for('support') }}">स्वस्थ जीवनशैली</a>
+    </p> -->
+    </div>
+    </div>
+  </div>
+</body>
